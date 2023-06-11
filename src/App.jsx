@@ -3,19 +3,7 @@ import Cita from './Components/Cita'
 import { useState } from 'react'
 
 function App() {
-  const [listaCitas, setListaCitas] = useState([{
-    mascota: "pepe",
-    dueno: "jorge",
-    fecha: "5?2002",
-    hora: "5:30",
-    sintomas: "le tiene miedo al sexo"
-  },{
-    mascota: "tilin",
-    dueno: "jorge",
-    fecha: "23/2/2023",
-    hora: "3:45",
-    sintomas: "le tiene miedo al sexo"
-  }])
+  const [listaCitas, setListaCitas] = useState([])
 
   const añadirCita = (cita) => {
     const nuevaLista = [...listaCitas]
