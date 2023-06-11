@@ -13,10 +13,7 @@ function App() {
         </div>
         <div className="one-half column">
           <h2>Administra tus citas</h2>
-          <Cita/>
-          <Cita/>
-          <Cita/>
-          <Cita/>
+          <Cita mascota={"pepe"} dueno={"jorge"} fecha={"5?2002"} hora={"5:30"} sintomas={"le tiene miedo al sexo"}/>
         </div>
       </div>
     </div>
