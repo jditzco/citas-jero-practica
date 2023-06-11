@@ -1,7 +1,21 @@
 import Form from './Components/Form'
 import Cita from './Components/Cita'
+import { useState } from 'react'
 
 function App() {
+  const [citas, setCitas] = useState([{
+    mascota: "pepe",
+    dueno: "jorge",
+    fecha: "5?2002",
+    hora: "5:30",
+    sintomas: "le tiene miedo al sexo"
+  },{
+    mascota: "tilin",
+    dueno: "jorge",
+    fecha: "23/2/2023",
+    sintomas: "le tiene miedo al sexo"
+  }])
+
   return (
     <>
     <h1>ADMINISTRADOR DE PACIENTES</h1>
