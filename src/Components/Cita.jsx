@@ -1,7 +1,7 @@
 const Cita = () => {
     return(
         
-        <div class="cita">
+        <div className="cita">
               <p>Mascota: <span>Blacky</span></p>
               <p>Dueño: <span>Jere</span></p>
               <p>Fecha: <span>2023-05-08</span></p>
