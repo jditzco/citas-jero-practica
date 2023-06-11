@@ -8,6 +8,7 @@ function App() {
   const añadirCita = (cita) => {
     const nuevaLista = [...listaCitas]
     nuevaLista.push(cita)
+
     setListaCitas(nuevaLista)
   }
 
