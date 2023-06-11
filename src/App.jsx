@@ -3,7 +3,7 @@ import Cita from './Components/Cita'
 import { useState } from 'react'
 
 function App() {
-  const [citas, setCitas] = useState([{
+  const [listaCitas, setListaCitas] = useState([{
     mascota: "pepe",
     dueno: "jorge",
     fecha: "5?2002",
@@ -13,6 +13,7 @@ function App() {
     mascota: "tilin",
     dueno: "jorge",
     fecha: "23/2/2023",
+    hora: "3:45",
     sintomas: "le tiene miedo al sexo"
   }])
 
@@ -27,7 +28,7 @@ function App() {
         </div>
         <div className="one-half column">
           <h2>Administra tus citas</h2>
-          <Cita mascota={"pepe"} dueno={"jorge"} fecha={"5?2002"} hora={"5:30"} sintomas={"le tiene miedo al sexo"}/>
+          {listaCitas.map(({mascota, dueno, fecha, sintomas, hora}) => <Cita mascota={mascota} dueno={dueno} fecha={fecha} hora={hora} sintomas={sintomas}/>)}
         </div>
       </div>
     </div>
