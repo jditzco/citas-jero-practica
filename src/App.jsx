@@ -17,6 +17,12 @@ function App() {
     sintomas: "le tiene miedo al sexo"
   }])
 
+  const añadirCita = (cita) => {
+    const nuevaLista = [...listaCitas]
+    nuevaLista.push(cita)
+    setListaCitas(nuevaLista)
+  }
+
   return (
     <>
     <h1>ADMINISTRADOR DE PACIENTES</h1>
@@ -24,7 +30,7 @@ function App() {
       <div className="row">
         <div className="one-half column">
           <h2>Crear mi Cita</h2>
-          <Form/>
+          <Form añadirCita={añadirCita}/>
         </div>
         <div className="one-half column">
           <h2>Administra tus citas</h2>
